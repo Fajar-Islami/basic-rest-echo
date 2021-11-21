@@ -2,6 +2,7 @@ package controllers
 
 import (
 	"net/http"
+	"strconv"
 
 	"github.com/basic-echo-golang/models"
 	"github.com/labstack/echo/v4"
@@ -30,5 +31,26 @@ func StorePegawai(c echo.Context) error {
 	}
 
 	// return dari modal
+	return c.JSON(http.StatusOK, result)
+}
+
+func UpdatePegawai(c echo.Context) error {
+	// Tampung parameter dari aplikasi eksternal
+	id := c.FormValue("id")
+	nama := c.FormValue("nama")
+	alamat := c.FormValue("alamat")
+	telepon := c.FormValue("telepon")
+
+	conv_id, err := strconv.Atoi(id)
+	if err != nil {
+		return c.JSON(http.StatusInternalServerError, err.Error())
+	}
+
+	result, err := models.UpdatePegawai(conv_id, nama, alamat, telepon)
+
+	if err != nil {
+		return c.JSON(http.StatusInternalServerError, err.Error())
+	}
+
 	return c.JSON(http.StatusOK, result)
 }
