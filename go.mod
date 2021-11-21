@@ -2,9 +2,14 @@ module github.com/basic-echo-golang
 
 go 1.17
 
-require github.com/labstack/echo/v4 v4.6.1
+require (
+	github.com/go-sql-driver/mysql v1.6.0
+	github.com/labstack/echo/v4 v4.6.1
+	github.com/tkanos/gonfig v0.0.0-20210106201359-53e13348de2f
+)
 
 require (
+	github.com/ghodss/yaml v1.0.0 // indirect
 	github.com/labstack/gommon v0.3.1 // indirect
 	github.com/mattn/go-colorable v0.1.11 // indirect
 	github.com/mattn/go-isatty v0.0.14 // indirect
@@ -14,4 +19,5 @@ require (
 	golang.org/x/net v0.0.0-20211118161319-6a13c67c3ce4 // indirect
 	golang.org/x/sys v0.0.0-20211117180635-dee7805ff2e1 // indirect
 	golang.org/x/text v0.3.7 // indirect
+	gopkg.in/yaml.v2 v2.2.2 // indirect
 )
