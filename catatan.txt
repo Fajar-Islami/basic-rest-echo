@@ -11,3 +11,8 @@ go get github.com/tkanos/gonfig
 menit 7:35 install mysql driver golang
 https://github.com/go-sql-driver/mysql
 go get -u github.com/go-sql-driver/mysql
+
+Video 6
+Menit 3:14 Prepare statement
+
+
