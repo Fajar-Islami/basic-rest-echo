@@ -15,4 +15,12 @@ go get -u github.com/go-sql-driver/mysql
 Video 6
 Menit 3:14 Prepare statement
 
+Video 9 jwt
+https://echo.labstack.com/cookbook/jwt/
 
+install juga bcrypt untuk hash
+https://pkg.go.dev/golang.org/x/crypto/bcrypt#CompareHashAndPassword
+go get golang.org/x/crypto/bcrypt
+
+Menit 20:53 jwt golang
+go get github.com/dgrijalva/jwt-go (versi lama)
