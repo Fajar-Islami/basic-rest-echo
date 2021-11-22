@@ -24,3 +24,9 @@ go get golang.org/x/crypto/bcrypt
 
 Menit 20:53 jwt golang
 go get github.com/dgrijalva/jwt-go (versi lama)
+go get github.com/golang-jwt/jwt (versi baru)
+
+Video 10
+go play validator
+https://github.com/go-playground/validator
+go get github.com/go-playground/validator/v10
